@@ -17,7 +17,7 @@ reporter <- new JUnitReporter("./TestResults.xml")
 //start remote
 start chrome
 
-"Google検索でLAJのHPにアクセス" &&& fun _ ->
+"Google検索でボーダーコリーを検索する" &&& fun _ ->
     //検索ページのURLを開く
     url "https://www.google.co.jp/"
     //検索ボックスに文字を入力
