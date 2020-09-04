@@ -1,4 +1,3 @@
-#r "nuget: FSharp.Compiler"
 #r "nuget: Selenium.WebDriver"
 #r "nuget: canopy"
 #r "nuget: Selenium.WebDriver.ChromeDriver, 83.0.0"
@@ -8,12 +7,10 @@ open canopy.runner.classic
 open canopy.configuration
 open canopy.classic
 open canopy.reporters
-open OpenQA.Selenium
-open System.IO
 open System
 
-let chromeDir = System.Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\.nuget\\packages\\selenium.chrome.webdriver\\83.0.0\\driver"
-canopy.configuration.chromeDir <- chromeDir
+let driverDir = System.Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\.nuget\\packages\\selenium.chrome.webdriver\\83.0.0\\driver"
+canopy.configuration.chromeDir <- driverDir
 reporter <- new JUnitReporter("./TestResults.xml")
 
 
