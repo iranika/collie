@@ -1,2 +1,6 @@
 # collie
-WIP: F#Interactive + canopy = smart test
+F#Interactive + canopy = smart test coding
+
+## Demo
+
+![](./docs/collie.gif)
