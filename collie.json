@@ -1,0 +1,9 @@
+{
+    "version": "0.1.0",
+    "url": "https://github.com/iranika/collie/archive/main.zip",
+    "extract_dir": "collie-main",
+    "bin": "collie.ps1",
+    "depends": [
+        "dotnet-sdk"
+    ]
+}
