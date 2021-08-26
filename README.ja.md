@@ -1,16 +1,14 @@
 # collie
 F#Interactive + canopy( web test framework ) = smart test coding
 
-日本語のREADME <- [README.ja.md](./README.ja.md)
-
-## Demo
+## デモンストレーション
 
 ![](./docs/collie.gif)
 
 
-## How to use?
+## どうやって使うの
 
-Note: You will need to rewrite the chrome driver version to match your environment.
+注記: 環境にあわせてChromeドライバーのバージョン数字に書き換える必要があったりします。
 
 in canopy-befor-use-fs5.fsx
 ```fs
@@ -37,21 +35,21 @@ reporter <- new JUnitReporter("./TestResults.xml")
 start chrome
 ```
 
-I am looking for a good fix, but haven't found one yet.
+よりスマートな解決方法を探していますが、まだ見つけていません。
 
-### using scoop
+### scoopを使ってインストールする
 
-Note: Scoop is package manager for windows.  
-When using Scoop, the dependency dotnet cli will be resolved by Scoop.
+注記: ScoopはWindows向けのパッケージマネージャーです。  
+Scoopマニフェストにdotnet cliへの依存が定義されているため、Scoopが必要に応じてdotnet cliをインストールします。
 
 ```
 > scoop install https://raw.githubusercontent.com/iranika/collie/main/collie.json
 > collie
 ```
 
-### using git
+### gitを使ってインストールする
 
-You need install dotnet cli.
+注記：dotnet cliをインストールしていることが前提です。
 
 ```
 > git clone https://github.com/iranika/collie.git
